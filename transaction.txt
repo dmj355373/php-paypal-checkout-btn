@@ -1,0 +1,111 @@
+{
+  "id": "1CC25736EF0307100",
+  "intent": "CAPTURE",
+  "status": "COMPLETED",
+  "purchase_units": [
+    {
+      "reference_id": "default",
+      "amount": {
+        "currency_code": "PHP",
+        "value": "10.00",
+        "breakdown": {
+          "item_total": {
+            "currency_code": "PHP",
+            "value": "10.00"
+          },
+          "shipping": {
+            "currency_code": "PHP",
+            "value": "0.00"
+          },
+          "handling": {
+            "currency_code": "PHP",
+            "value": "0.00"
+          },
+          "insurance": {
+            "currency_code": "PHP",
+            "value": "0.00"
+          },
+          "shipping_discount": {
+            "currency_code": "PHP",
+            "value": "0.00"
+          }
+        }
+      },
+      "payee": {
+        "email_address": "doejohn@gmail.com",
+        "merchant_id": "M3PASR5Z64SXJ"
+      },
+      "description": "test live paypal payments for AbuloyPH",
+      "items": [
+        {
+          "name": "item name",
+          "unit_amount": {
+            "currency_code": "PHP",
+            "value": "10.00"
+          },
+          "tax": {
+            "currency_code": "PHP",
+            "value": "0.00"
+          },
+          "quantity": "1"
+        }
+      ],
+      "shipping": {
+        "name": {
+          "full_name": "John Doe"
+        },
+        "address": {
+          "address_line_1": "120",
+          "address_line_2": "Bulacan",
+          "admin_area_2": "Manila",
+          "admin_area_1": "MANILA",
+          "postal_code": "4223",
+          "country_code": "PH"
+        }
+      },
+      "payments": {
+        "captures": [
+          {
+            "id": "23C15642L62590631",
+            "status": "COMPLETED",
+            "amount": {
+              "currency_code": "PHP",
+              "value": "10.00"
+            },
+            "final_capture": true,
+            "seller_protection": {
+              "status": "ELIGIBLE",
+              "dispute_categories": [
+                "ITEM_NOT_RECEIVED",
+                "UNAUTHORIZED_TRANSACTION"
+              ]
+            },
+            "create_time": "2023-02-15T08:56:02Z",
+            "update_time": "2023-02-15T08:56:02Z"
+          }
+        ]
+      }
+    }
+  ],
+  "payer": {
+    "name": {
+      "given_name": "John",
+      "surname": "Doe",
+      "middle_name": "Villapando"
+    },
+    "email_address": "doejohn@gmail.com",
+    "payer_id": "GADGGKDNW7UQG",
+    "address": {
+      "country_code": "PH"
+    }
+  },
+  "create_time": "2023-02-15T08:55:39Z",
+  "update_time": "2023-02-15T08:56:02Z",
+  "links": [
+    {
+      "href": "https://api.paypal.com/v2/checkout/orders/1CC25736EF0307100",
+      "rel": "self",
+      "method": "GET"
+    }
+  ]
+}
