@@ -1,2 +1,2 @@
 # php-paypal-checkout-btn
-my own checkout btn from paypal Javascript code
+record of codes for checkout btn from paypal Javascript code
